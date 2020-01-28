@@ -5,6 +5,7 @@
 // variables
 var $header_top = $('.header-top');
 var $nav = $('nav');
+var music = document.getElementById('music');
 
 // toggle menu
 $header_top.find('a').on('click', function() {
@@ -12,13 +13,10 @@ $header_top.find('a').on('click', function() {
 });
 
 // enable the first music to play
-document.addEventListener('click', musicPlay);
-function musicPlay() {
-    music = document.getElementById('music1');
-    if (!(music.duration > 0 && !music.paused))
-          music.play();
-   // document.removeEventListener('click', musicPlay);
-}
+document.addEventListener('click', function(){
+  if (!(music.duration > 0 && !music.paused))
+    music.play();});
+
 
 // fullpage customization
 $('#fullpage1').fullpage({
@@ -38,6 +36,12 @@ $('#fullpage1').fullpage({
     if (index == 5) {
         $('#fp-nav').hide();
       }
+
+    //when the page of Expo shows
+    if(index == 4){
+      music.src = 'data/Forevermore.mp3';
+      music.play();
+    }
   },
 
   onLeave: function(index, nextIndex, direction) {
