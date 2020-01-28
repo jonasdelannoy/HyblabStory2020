@@ -11,6 +11,15 @@ $header_top.find('a').on('click', function() {
   $(this).parent().toggleClass('open-menu');
 });
 
+// enable the first music to play
+document.addEventListener('click', musicPlay);
+function musicPlay() {
+    music = document.getElementById('music1');
+    if (!(music.duration > 0 && !music.paused))
+          music.play();
+   // document.removeEventListener('click', musicPlay);
+}
+
 // fullpage customization
 $('#fullpage1').fullpage({
   sectionsColor: ['white', 'black', 'black', '#F2AE72', '#5C832F', 'black'],
