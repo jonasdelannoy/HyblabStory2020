@@ -1,0 +1,71 @@
+img{
+	width:20%;
+}
+
+
+#feedback-section {
+  position: relative;
+  text-align: center;
+  color: white;
+	background-color: #1E1E1E;
+}
+
+#feedback-content{
+	position: relative;
+	top: 10%;
+	font-size: larger;
+
+}
+
+#feedback-contact{
+	position: relative;
+	top:20%;
+	left: 5%;
+	text-align: left;
+	font-size: small;
+}
+
+
+table{
+	width: 30%;
+	text-align: left;
+	font-size: medium;
+}
+ 
+table, tr{
+	border: 1px solid white;
+	  margin: 0 auto;
+	  font-size: medium;
+	  border-collapse: collapse;
+  }
+ 
+ th{
+	line-height: 200%;
+
+ }
+
+  .table_message{
+	  height: 150px;
+	  vertical-align: top;
+  }
+
+ 
+  .table_title{
+	  width: 25%;
+	  font-weight: 500;
+
+  }
+  #btnSend{
+	background-color: #1E1E1E;
+	color: white;
+	padding: 8px 10px;
+	border: 1px solid white;
+	border-radius: 2px;
+	margin-top: 10px;
+  }
+  #btnSend:hover {background-color: #373837}
+  #btnSend:active {
+	background-color: #373837;
+	box-shadow: 0 2px #666;
+	transform: translateY(1px);
+  }
