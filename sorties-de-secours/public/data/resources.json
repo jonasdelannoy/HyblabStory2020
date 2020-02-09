@@ -1,72 +1,74 @@
 {
-    "activities" : [
-        {   "name" : "musique",
-            "title" : "RÉVÉLATION",
-            "authors" : "BALOJI",
-            "article" : "Ecoutez tout Baloji : tout est bien, tout est bon, chaque morceau est différent, à la fois électro, pop, afro, boum boum, disco, rap, funk, mélodique, incursions éthiopiennes, maliennes, congolaises, sans jamais avoir cette impression désagréable d’ethno-musique poussiéreuse. Et c’est ça qui est fort avec Baloji, c’est probablement le premier et le seul – peut être parce qu’il est belge – à avoir pris les influences africaines de façon moderne, glamour, sexy, rock et rejeté les clichés pour intégrer ces références dans sa mythologie. Aussi bien musicalement qu’esthétiquement. Il suffit de regarder le clip démentiel de Bleu de Nuit (ici), qu’il a réalisé, en s’inspirant du travail du formidable photographe Patrick Willocq (là), qui crée des œuvres super poétiques et ultra colorées entre Mondino, Martin Parr et Pierre et Gilles. Franchement un des trucs les plus beaux qu’on ait vu ces dernières années. Dans l’univers de Baloji tous les fondamentaux afros sont là, mais assemblés d’une manière à constituer une culture moderne et pop en soi, mais aussi empreinte des cultures rock et cinématographiques d'Occident, qui n’est pas sans rappeler les romans de Chimamanda Ngozi Adichie.",
-        },
-        {   "name" : "exposition",
-            "intro" : "Dix grands formats, illustrant avec humour et décalage différentes saynètes aquatiques. Seuls l’architecture et les personnages composent les photographies. Sans jamais être représentée (ou presque), l’eau est suggérée, et la composition de la photographie oscille entre image réelle et tableau. Cette série a reçu le Prix EURAZEO 2015.",
-            "title" : "LES TERMES",
-            "author" : "MURIEL BORDIER",
-            "article" : "Plouf. La plus rigolote, et la moins « chargée » de sens, mais aussi la plus esthétique. Des espaces comme des aérogares futuristes, absolument blancs, et partout de petits personnages qui font penser – mais oui ! – à la pub Kodak de Mondino, et là encore à des wagons de films de SF, à commencer par 2001, l’odyssée de l’espace, à Oblivion, semi-nanar à l’esthétique parfaite et immaculée avec Tom Cruise, à Bienvenue à Gataca, au Meilleur des mondes, à Wall-E.... Des piscines sans eau, des plongeoirs au ras du plafond, des cohortes de baigneurs suspendus sur des rails, c’est un régal de se perdre dans l’examen minutieux de ces photos et de découvrir les surprises qu’y sèment la photographe, dans un gigantesque «Let’s find Momo».",
-            "quotation" : "« Je suis toujours menée par l’idiotie, le non sens, les grosses machineries où l’homme est face à un système qu’il a créé et qu’il subit. Les décors changent mais il y a toujours une aberration ».",
-        },
-        {   "name" : "danse",
-            "intro" : "Dix grands formats, illustrant avec humour et décalage différentes saynètes aquatiques. Seuls l’architecture et les personnages composent les photographies. Sans jamais être représentée (ou presque), l’eau est suggérée, et la composition de la photographie oscille entre image réelle et tableau. Cette série a reçu le Prix EURAZEO 2015.",
-            "title" : "LA GALERIE",
-            "author" : "Inès Mauricio Mackenzy Bergile",
-            "article" : "On ne pense pas à une petite maison d’un quartier d’une ville moyenne de Bretagne. On ne pense pas à une porte grise s’ouvrant sur un tapis de danse blanc à peine effleuré d’une table sur tréteaux et de quelques plantes. La maison d’Inès Mauricio et Mackenzy Bergile est une installation légère et sans attaches, où le couple vit comme en apesanteur, sans toucher terre, juste eux deux. Pas de cadres Ikea, pas de vide poche en céramique, pas de photos de vacances, pas de ticket de concert coincé dans un miroir, pas de miroir.",
-            "article2" : "Inès Mauricio et Mackenzy Bergile sont amoureux, à l’évidence. Chacun de leurs gestes se dessine dans l’espace comme le complément de l’autre, dans une chorégraphie inconsciente. Placés dans le volume de leur cuisine-atelier-galerie ils sont des œuvres inscrites dans l’espace. Inès et Mackenzy sont traversés par la grâce, la pureté et la sincérité, dans une sorte de confiance en ce qu’ils sont et ce qu’ils font. On entre chez eux et on se transforme en catalyseur, avec ce que l’on est. Avec son corps, son énergie ou ses mots. Entrer dans un lieu recouvert d’un tapis de danse n’est pas anodin, entrer dans un lieu saturé de blanc non plus. On n’est pas la même debout sur le bitume ou sur un tapis de danse blanc. On y devient un point, un contrepoint, un départ, une pièce posée et jouée, un ancrage pour des lignes, une racine pour un mouvement, une énergie, une histoire, des possibles.",
-        },
-    ],
-    "figures":[
-        "1": {
-            "number" : "4",
-            "description" : "LE SEUL AGENDA CULTUREL DE BRETAGNE",
-            "item" : "COUVRANT 4 MÉTROPOLES",
-        },
-        "2": {
-            "number" : "5",
-            "description" : "C’EST LE NOMBRE",
-            "item" : "DE RÉDACTRICES",
-        },
-        "3":{
-            "number" : "224",
-            "description" : "C’EST LE NOMBRE",
-            "item" : "DE NUMÉROS PARUS",
-        },
-        "4":{
-            "number" : "20",
-            "description" : "ANS",
-            "item" : "DÉJÀ",
-        },
-        "5":{
-            "number" : "300",
-            "description" : "ÉVÉNEMENTS COUVERTS",
-            "item" : "PAR MOIS",
-        },
-        "6":{
-            "number" : "600",
-            "description" : "POINTS DE DISTRIBUTION",
-            "item" : "PRÉCIS ET ÉVOLUTIFS",
-        },
-        "7":{
-            "number" : "12 000",
-            "description" : "EXEMPLAIRES",
-            "item" : "PAR NUMÉRO",
-        },
-        "8":{
-            "number" : "31",
-            "description" : "UN AGENDA MENSUEL",
-            "item" : "DU PREMIER AU DERNIER JOUR",
-        },
-        "9":{
-            "number" : "27 209",
-            "description" : "KM²",
-            "item" : "DE CULTURE",
-        },
+	"activities": [{
+			"name": "musique",
+			"title": "RÉVÉLATION",
+			"authors": "BALOJI",
+			"article": "Ecoutez tout Baloji : tout est bien, tout est bon, chaque morceau est différent, à la fois électro, pop, afro, boum boum, disco, rap, funk, mélodique, incursions éthiopiennes, maliennes, congolaises, sans jamais avoir cette impression désagréable d’ethno-musique poussiéreuse. Et c’est ça qui est fort avec Baloji, c’est probablement le premier et le seul – peut être parce qu’il est belge – à avoir pris les influences africaines de façon moderne, glamour, sexy, rock et rejeté les clichés pour intégrer ces références dans sa mythologie. Aussi bien musicalement qu’esthétiquement. Il suffit de regarder le clip démentiel de Bleu de Nuit (ici), qu’il a réalisé, en s’inspirant du travail du formidable photographe Patrick Willocq (là), qui crée des œuvres super poétiques et ultra colorées entre Mondino, Martin Parr et Pierre et Gilles. Franchement un des trucs les plus beaux qu’on ait vu ces dernières années. Dans l’univers de Baloji tous les fondamentaux afros sont là, mais assemblés d’une manière à constituer une culture moderne et pop en soi, mais aussi empreinte des cultures rock et cinématographiques d'Occident, qui n’est pas sans rappeler les romans de Chimamanda Ngozi Adichie."
+		},
+		{
+			"name": "exposition",
+			"intro": "Dix grands formats, illustrant avec humour et décalage différentes saynètes aquatiques. Seuls l’architecture et les personnages composent les photographies. Sans jamais être représentée (ou presque), l’eau est suggérée, et la composition de la photographie oscille entre image réelle et tableau. Cette série a reçu le Prix EURAZEO 2015.",
+			"title": "LES TERMES",
+			"author": "MURIEL BORDIER",
+			"article": "Plouf. La plus rigolote, et la moins « chargée » de sens, mais aussi la plus esthétique. Des espaces comme des aérogares futuristes, absolument blancs, et partout de petits personnages qui font penser – mais oui ! – à la pub Kodak de Mondino, et là encore à des wagons de films de SF, à commencer par 2001, l’odyssée de l’espace, à Oblivion, semi-nanar à l’esthétique parfaite et immaculée avec Tom Cruise, à Bienvenue à Gataca, au Meilleur des mondes, à Wall-E.... Des piscines sans eau, des plongeoirs au ras du plafond, des cohortes de baigneurs suspendus sur des rails, c’est un régal de se perdre dans l’examen minutieux de ces photos et de découvrir les surprises qu’y sèment la photographe, dans un gigantesque «Let’s find Momo».",
+			"quotation": "« Je suis toujours menée par l’idiotie, le non sens, les grosses machineries où l’homme est face à un système qu’il a créé et qu’il subit. Les décors changent mais il y a toujours une aberration »."
+		},
+		{
+			"name": "danse",
+			"intro": "Dix grands formats, illustrant avec humour et décalage différentes saynètes aquatiques. Seuls l’architecture et les personnages composent les photographies. Sans jamais être représentée (ou presque), l’eau est suggérée, et la composition de la photographie oscille entre image réelle et tableau. Cette série a reçu le Prix EURAZEO 2015.",
+			"title": "LA GALERIE",
+			"author": "Inès Mauricio Mackenzy Bergile",
+			"article": "On ne pense pas à une petite maison d’un quartier d’une ville moyenne de Bretagne. On ne pense pas à une porte grise s’ouvrant sur un tapis de danse blanc à peine effleuré d’une table sur tréteaux et de quelques plantes. La maison d’Inès Mauricio et Mackenzy Bergile est une installation légère et sans attaches, où le couple vit comme en apesanteur, sans toucher terre, juste eux deux. Pas de cadres Ikea, pas de vide poche en céramique, pas de photos de vacances, pas de ticket de concert coincé dans un miroir, pas de miroir.",
+			"article2": "Inès Mauricio et Mackenzy Bergile sont amoureux, à l’évidence. Chacun de leurs gestes se dessine dans l’espace comme le complément de l’autre, dans une chorégraphie inconsciente. Placés dans le volume de leur cuisine-atelier-galerie ils sont des œuvres inscrites dans l’espace. Inès et Mackenzy sont traversés par la grâce, la pureté et la sincérité, dans une sorte de confiance en ce qu’ils sont et ce qu’ils font. On entre chez eux et on se transforme en catalyseur, avec ce que l’on est. Avec son corps, son énergie ou ses mots. Entrer dans un lieu recouvert d’un tapis de danse n’est pas anodin, entrer dans un lieu saturé de blanc non plus. On n’est pas la même debout sur le bitume ou sur un tapis de danse blanc. On y devient un point, un contrepoint, un départ, une pièce posée et jouée, un ancrage pour des lignes, une racine pour un mouvement, une énergie, une histoire, des possibles."
+		}
+	],
+	"figures": {
+		"0": {
+			"number": "4",
+			"description": "L'AGENDA CULTUREL BRETON",
+			"item": "COUVRANT 4 MÉTROPOLES"
+		},
+		"1": {
+			"number": "5",
+			"description": "C’EST LE NOMBRE",
+			"item": "DE RÉDACTRICES"
+		},
+		"2": {
+			"number": "20",
+			"description": "ANS",
+			"item": "DÉJÀ"
+		},
+		"3": {
+			"number": "31",
+			"description": "UN AGENDA MENSUEL",
+			"item": "DU PREMIER AU DERNIER JOUR"
+		},
+		"4": {
+			"number": "224",
+			"description": "C’EST LE NOMBRE",
+			"item": "DE NUMÉROS PARUS"
+		},
+		"5": {
+			"number": "300",
+			"description": "ÉVÉNEMENTS COUVERTS",
+			"item": "PAR MOIS"
+		},
+		"6": {
+			"number": "600",
+			"description": "POINTS DE DISTRIBUTION",
+			"item": "PRÉCIS ET ÉVOLUTIFS"
+		},
+		"7": {
+			"number": "12 000",
+			"description": "EXEMPLAIRES",
+			"item": "PAR NUMÉRO"
+		},
+		"8": {
+			"number": "27 209",
+			"description": "KM²",
+			"item": "DE CULTURE"
+		}
 
 
-        ]
-    }
+	}
+}
