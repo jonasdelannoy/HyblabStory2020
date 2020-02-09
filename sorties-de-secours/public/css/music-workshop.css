@@ -1,6 +1,7 @@
-#music-workshop-section {
-  position: relative;
-	background-color: #1E1E1E;
+#music-section {
+    position: relative;
+    background-color: #1E1E1E;
+    overflow-y: hidden;
 }
 
 section#music-workshop-article {

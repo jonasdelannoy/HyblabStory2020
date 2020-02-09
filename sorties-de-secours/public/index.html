@@ -448,3 +448,548 @@
   </div>
 </section>
 -->
+=======
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Hyblab 2020 - Sorties de Secours</title>
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+
+  <!-- musique en entrée; il faut cliquer quelque part pour l'activer -->
+  <audio id="generalMusic" src="sons/ambiance3.mp3" loop="true" autoplay="true">
+    <p>Votre navigateur ne prend pas en charge le son. Veuillez changez de navigateur afin de profiter d'une expérience optimale.</p>
+  </audio>
+  <audio id="voice" src="" autoplay>
+    <p>Votre navigateur ne prend pas en charge le son. Veuillez changez de navigateur afin de profiter d'une expérience optimale.</p>
+  </audio>
+
+  <!-- jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+  <!-- BSL -->
+  <script type="text/javascript" src="js/bodyScrollLock.js"></script>
+
+  <script type="text/javascript" src="js/paper-full.min.js"></script>
+
+
+  <!-- FontAwesome -->
+  <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
+
+  <!-- Konva -->
+  <script src="https://unpkg.com/konva@4.0.0/konva.min.js"></script>
+
+  <!-- CUSTOMS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <script type="text/javascript" src="js/index.js" defer></script>
+
+    <!-- FONTS -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/nimbus-sans-l" type="text/css"/>
+
+    <!-- SOUND -->
+    <script type="text/javascript" src="js/sound.js"></script>
+
+
+  <!-- home -->
+    <link rel="stylesheet" href="css/home.css" />
+    <script type="text/javascript" src="js/home.js"></script>
+    <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="css/sound.css" />
+
+
+
+    <!-- loading -->
+    <link rel="stylesheet" href="css/loading.css" />
+    <script type="text/javascript" src="js/loading.js"></script>
+
+    <!-- Presentation -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <script type="text/javascript" src="js/presentation.js"></script>
+
+  <!-- expo -->
+  <link rel="stylesheet" href="css/expo.css">
+  <script type="text/javascript" src="js/expo.js"></script>
+
+    <!-- article -->
+    <link rel="stylesheet" href="css/article.css">
+    <script type="text/javascript" src="js/article.js"></script>
+
+  <!-- Menu -->
+    <link rel="stylesheet" href="css/menu.css" />
+  <script type="text/javascript" src="js/menu.js"></script>
+
+
+  <!-- figures -->
+  <link rel="stylesheet" href="css/figures.css">
+  <script type="text/javascript" src="js/figures.js"></script>
+
+
+
+
+
+  <!-- dance -->
+    <link rel="stylesheet" href="css/dance.css">
+    <script type="text/javascript" src="js/dance.js"></script>
+
+    <!-- music workshop -->
+    <link rel="stylesheet" href="css/music-workshop.css">
+    <script type="text/javascript" src="js/music-workshop.js"></script>
+
+
+</head>
+<body>
+  <div id="container">
+
+    <div class="container-scrollable">
+
+      <!-- HOME -->
+      <section class ="section" id="home-section">
+        <div id="hamburger">
+          <input type="checkbox" id="hamburger-checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="categories">
+              <li><p class="menuLink" id="link-presentation">À propos</p></li>
+              <li><p class="menuLink" id="link-menu">Expériences</p></li>
+              <li><p class="menuLink" id="link-figures">Quelques chiffres</p></li>
+              <li><p class="menuLink" id="link-contact">Contact</p></li>
+          </ul>
+        </div>
+        <div id="home-wrapper">
+          <div id="logo-wrapper">
+            <video autoplay muted id="video_logo">
+              <source src="video/logo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div id="start-experience">
+            <img src="img/yellow-brush.png" id="img-start"/>
+            <div id="button-start"><p id="button-start-text">Commencer l'expérience</p></div>
+          </div>
+        </div>
+      </section>
+      <!-- END HOME -->
+
+      <!-- LOADING -->
+      <section class="section" id="loading-section">
+        <div class="sound-content" id="sound-content-loading">
+          <svg xmlns="http://www.w3.org/2000/svg" class="sound-icon-wrapper" viewBox="0 0 50 50" width="128" height="128">
+            <g>
+              <title>Sound Icon</title>
+              <rect class="bar bar-white" height="4" width="1" rx="0.5" transform="translate(10 0)"></rect>
+              <rect class="bar bar-white" height="20" width="1" rx="0.5" transform="translate(14 0)"></rect>
+              <rect class="bar bar-white" height="4" width="1" rx="0.5" transform="translate(18 0)"></rect>
+              <rect class="bar bar-white" height="10" width="1" rx="0.5" transform="translate(22 0)"></rect>
+              <rect class="bar bar-white" height="20" width="1" rx="0.5" transform="translate(26 0)"></rect>
+              <rect class="bar bar-white" height="20" width="1" rx="0.5" transform="translate(30 0)"></rect>
+              <rect class="bar bar-white" height="20" width="1" rx="0.5" transform="translate(34 0)"></rect>
+            </g>
+          </svg>
+
+          <p id="soundText">Pour profiter au maximum de cette expérience,<br>veuillez augmenter le volume.</p>
+        </div>
+        <div id="mouse-animated">
+          <div class="scroll-down">
+            <div class="mousey" id="mouse-down">
+              <div class="scroller"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END LOADING -->
+
+      <!-- PRESENTATION -->
+      <section class="section" id="presentation-section">
+        <div class="animated fadeOut" id="logo-sorties">
+          <img src='img/logo.png' id='presentation-logo' />
+        </div>
+      </section>
+      <!-- END PRESENTATION -->
+
+
+      <!-- MENU -->
+      <section class="section" id="menu-section">
+
+      <div class="expChoice" id="expChoiceExpo">
+          <img class="hachure" src="img/hachure_expo.png" id="hachure-expo">
+
+        <img class="img-menu-crayon" src='img/menu_expo_crayon.png'/></a>
+        <img class="img-menu" id="menu-expo" src='img/menu_expo.png'/>
+        <div class="menu-hover" id="hover-expo">
+          <div class="hover-text-wrapper">
+            <img class="menu-workshop-title" id="title-expo" src="img/menu_title_expo.png" alt="La leçon de natation, Muriel Bordier" />
+            <p class="menu-text">Dix grands formats, illustrant avec humour et décalage
+              différentes saynètes aquatiques.<br>
+              Seuls l’architecture et les personnages composent les photographies.<br>
+              Sans jamais être représentée (ou presque), l’eau est suggérée,<br>
+              et la composition de la photographie oscille entre image réelle et tableau.<br><br>
+              <b>Cette série a reçu le Prix EURAZEO 2015.</b></p>
+            <img class="menu-workshop-author" id="author-expo" src="img/menu_auteur_expo.png" alt="Muriel Bordier" />
+            <div class="animated fadeOut" id="mouse-animated-menuExpo">
+              <div class="scroll-down">
+                <div class="mousey-black" id="mouse-down">
+                  <div class="scroller-black"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expChoice" id="expChoiceMusique">
+          <img class="hachure" src="img/hachure_music.png" id="hachure-music">
+
+        <img class="img-menu-crayon" src='img/menu_musique_crayon.png'/>
+        <img class="img-menu" id="menu-music" class="menu-img" src='img/menu_musique.jpg'/>
+        <div class="menu-hover" id="hover-music">
+          <div class="hover-text-wrapper">
+            <img class="menu-workshop-title" id="title-musique" src="img/menu_title_musique.png" />
+            <p class="menu-text">Dans Sorties de secours, on écrit pas souvent sur la musique, puisqu’on a confié<br>
+              la tache à Radio Balises, mais on aurait aimé chroniquer 137 avenue Kaniama,<br>
+              le nouvel album de <b>Baloji</b>, au printemps dernier, lorsqu’il est sorti.<br>
+              Un album qu’on écoute en boucle et qui nous fait fondre, onduler, groover, frémir, réfléchir,<br>
+              <b>tout ça en même temps.</b></p>
+            <img class="menu-workshop-author" id="author-musique" src="img/menu_auteur_musique.png" alt="Baloji" />
+            <div class="animated fadeOut" id="mouse-animated-menuMusic">
+              <div class="scroll-down">
+                <div class="mousey-black" id="mouse-down">
+                  <div class="scroller-black"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expChoice" id="expChoiceDance">
+          <img class="hachure" src="img/hachure_dance.png" id="hachure-dance">
+
+        <img class="img-menu-crayon" src='img/menu_dance_crayon.png'/>
+        <img class="img-menu" id="menu-dance" class="menu-img" src='img/menu_dance.png'/>
+        <div class="menu-hover" id="hover-dance">
+          <div class="hover-text-wrapper">
+            <img class="menu-workshop-title" id="title-danse" src="img/menu_title_danse.png" />
+            <p class="menu-text">Inès Mauricio est une danseuse d’origine suisse. Mackenzy Bergile est lorientais,<br>
+              on l’a vu dans « 20 danseurs pour le XXe siècle » de Boris Charmatz.<br>
+              Mauricio et Bergile parlent d’écologie, demandent si la danse peut interagir avec l’écologie.<br>
+              On pense aussitôt au marcottage et à la merveilleuse multiplication des végétaux,<br>
+              comment les rhizomes s’étendent, comment les graines s’envolent et se déposent,<br>
+              comment la pourriture devient nourriture... <b>Ils demandent ce qu’est l’essentiel.</b></p>
+            <img class="menu-workshop-author" id="author-danse" src="img/menu_auteur_danse.png" alt="Mauricio Bergile" />
+            <div class="animated fadeOut" id="mouse-animated-menuDance">
+              <div class="scroll-down">
+                <div class="mousey-black" id="mouse-down">
+                  <div class="scroller-black"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- END MENU -->
+
+
+    <!-- EXPO -->
+    <section
+      class="section"
+      id="expo-section">
+
+      <!-- EXPO ARTICLE -->
+      <section class="article-container" id="article-container-expo">
+
+        <img class="brush brush-show" id="article-expo-yellow1" src="img/brush/yellow1.png" />
+
+        <img class="brush" id="article-expo-orange5" src="img/brush/orange5.png" />
+        <img class="brush" id="article-expo-blue5" src="img/brush/blue5.png" />
+
+        <img class="brush" id="article-expo-blue3" src="img/brush/blue3.png" />
+        <img class="brush" id="article-expo-orange1" src="img/brush/orange1.png" />
+
+        <img class="brush" id="article-expo-yellow5" src="img/brush/yellow5.png" />
+        <img class="brush" id="article-expo-orange6" src="img/brush/orange6.png" />
+
+        <div class="article-wrapper">
+
+          <img class="article-dechirure" src="img/texture/dechirure1.png" />
+
+          <div class="article-title-wrapper" id="article-title-wrapper-expo">
+            <p class="article-title">Les Termes</p>
+            <p class="article-author">Muriel Bordier</p>
+          </div>
+
+          <div class="article-img-wrapper ">
+            <img class="article-img" id="article-img-expo3" src="img/articles/expo/article3.png">
+            <img class="article-img" id="article-img-expo2" src="img/articles/expo/article2.png">
+            <img class="article-img" id="article-img-expo1" src="img/articles/expo/article1.png">
+            <img class="article-img article-img-crayon" id="article-img-crayon-expo" src="img/articles/expo/crayon.png">
+          </div>
+          <div class="article-text-wrapper" id="article-text-wrapper-expo">
+            <p class="article-text">Plouf. La plus rigolote, et la moins « chargée » de sens, mais aussi la plus esthétique. Des espaces comme des aérogares futuristes, absolument blancs, et partout de petits personnages qui font penser – mais oui ! – à la pub Kodak de Mondino, et là encore à des wagons de films de SF, à commencer par 2001, l’odyssée de l’espace, à Oblivion, semi-nanar à l’esthétique parfaite et immaculée avec Tom Cruise, à Bienvenue à Gataca, au Meilleur des mondes, à Wall-E.... Des piscines sans eau, des plongeoirs au ras du plafond, des cohortes de baigneurs suspendus sur des rails, c’est un régal de se perdre dans l’examen minutieux de ces photos et de découvrir les surprises qu’y sèment la photographe, dans un gigantesque «Let’s find Momo».</p>
+            <p class="article-text"><i>« Je suis toujours menée par l’idiotie, le non sens, les grosses machineries où l’homme est face à un système qu’il a créé et qu’il subit. Les décors changent mais il y a toujours une aberration ».</i></p>
+            <p class="article-text"><b>Isabelle Nivet</b> Avril 2018. <br><b>Sorties de secours</b></p>
+          </div>
+
+        </div>
+
+        <div class="article-footer">
+          <p><b>Muriel Bordier</b> Photographe et vidéaste.</p>
+          <div class="article-footer-center">
+            <div class="ss-buttons-wrapper ss-buttons-wrapper-hidden" id="ss-buttons-wrapper-expo">
+              <input class="ss-radio" type="radio" id="expo-ss-1" name="expo-slide-show" checked />
+              <input class="ss-radio" type="radio" id="expo-ss-2" name="expo-slide-show" />
+              <input class="ss-radio" type="radio" id="expo-ss-3" name="expo-slide-show" />
+              <label for="expo-ss-1" class="ss-dot ss-dot-selected" id="expo-dot1"></label>
+              <label for="expo-ss-2" class="ss-dot" id="expo-dot2"></label>
+              <label for="expo-ss-3" class="ss-dot" id="expo-dot3"></label>
+            </div>
+            <p class="article-footer-website">www.murielbordier.com</p>
+          </div>
+          <div class="sound-content article-sound">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sound-icon-wrapper" viewBox="0 0 50 50" width="128" height="128">
+              <g>
+                <title>Sound Icon</title>
+                <rect class="bar bar-dark" height="4" width="1" rx="0.5" transform="translate(10 0)"></rect>
+                <rect class="bar bar-dark" height="20" width="1" rx="0.5" transform="translate(14 0)"></rect>
+                <rect class="bar bar-dark" height="4" width="1" rx="0.5" transform="translate(18 0)"></rect>
+                <rect class="bar bar-dark" height="10" width="1" rx="0.5" transform="translate(22 0)"></rect>
+                <rect class="bar bar-dark" height="20" width="1" rx="0.5" transform="translate(26 0)"></rect>
+                <rect class="bar bar-dark" height="20" width="1" rx="0.5" transform="translate(30 0)"></rect>
+                <rect class="bar bar-dark" height="20" width="1" rx="0.5" transform="translate(34 0)"></rect>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+      </section>
+      <!-- END EXPO ARTICLE -->
+
+      <div id="expo-konva"></div>
+
+    </section>
+      <!-- END EXPO -->
+
+      <!-- DANCE -->
+      <section
+        class="section"
+        id="dance-section">
+
+        <div id="container-dance-section">
+
+        <!-- DANCE ARTICLE -->
+        <section class="article-container" id="article-container-dance">
+
+          <img class="brush brush-show" id="article-dance-blue4" src="img/brush/blue4.png" />
+          <img class="brush brush-show" id="article-dance-yellow4a" src="img/brush/yellow4.png" />
+
+          <img class="brush" id="article-dance-orange2" src="img/brush/orange2.png" />
+          <img class="brush" id="article-dance-yellow2" src="img/brush/yellow2.png" />
+
+          <img class="brush" id="article-dance-blue5" src="img/brush/blue5.png" />
+          <img class="brush" id="article-dance-orange6" src="img/brush/orange6.png" />
+
+          <img class="brush" id="article-dance-yellow4b" src="img/brush/yellow4.png" />
+          <img class="brush" id="article-dance-blue1" src="img/brush/blue1.png" />
+
+          <div class="article-wrapper">
+
+            <img class="article-dechirure" src="img/texture/dechirure1.png" />
+
+            <div class="article-title-wrapper" id="article-title-wrapper-dance">
+              <p class="article-title">La Galerie</p>
+              <p class="article-author">Mauricio Bergile</p>
+            </div>
+
+            <div class="article-img-wrapper ">
+              <img class="article-img" id="article-img-dance3" src="img/articles/dance/article3.png">
+              <img class="article-img" id="article-img-dance2" src="img/articles/dance/article2.jpeg">
+              <img class="article-img" id="article-img-dance1" src="img/articles/dance/article1.jpeg">
+              <img class="article-img article-img-crayon" id="article-img-crayon-dance" src="img/articles/dance/crayon.png">
+            </div>
+            <div class="article-text-wrapper" id="article-text-wrapper-dance">
+              <p class="article-text">Inès Mauricio et Mackenzy Bergile sont amoureux, à l’évidence. Chacun de leurs gestes se dessine dans l’espace comme le complément de l’autre, dans une chorégraphie inconsciente. Placés dans le volume de leur cuisine-atelier-galerie ils sont des œuvres inscrites dans l’espace. Inès et Mackenzy sont traversés par la grâce, la pureté et la sincérité, dans une sorte de confiance en ce qu’ils sont et ce qu’ils font. On entre chez eux et on se transforme en catalyseur, avec ce que l’on est. Avec son corps, son énergie ou ses mots. Entrer dans un lieu recouvert d’un tapis de danse n’est pas anodin, entrer dans un lieu saturé de blanc non plus. On n’est pas la même debout sur le bitume ou sur un tapis de danse blanc. On y devient un point, un contrepoint, un départ, une pièce posée et jouée, un ancrage pour des lignes, une racine pour un mouvement, une énergie, une histoire, des possibles.</p>
+              <p class="article-text"><b>Isabelle Nivet</b> Avril 2018. <br><b>Sorties de secours</b></p>
+            </div>
+
+          </div>
+
+          <div class="article-footer">
+            <p class="article-footer-left"><b>Inès Mauricio</b> est une danseuse d’origine suisse.<br>
+              <b>Mackenzy Bergile</b> est lorientais, on l’a vu dans « <i>20 danseurs pour le XXe siècle </i> » de Boris Charmatz, et on le verra dans son solo « <i>Antienne</i> » au Théâtre de Lorient.<br>
+              <b>Thomas Winter</b> Photographe.</p>
+            <div class="article-footer-center">
+              <div class="ss-buttons-wrapper ss-buttons-wrapper-hidden" id="ss-buttons-wrapper-dance">
+                <input class="ss-radio" type="radio" id="dance-ss-1" name="dance-slide-show" checked />
+                <input class="ss-radio" type="radio" id="dance-ss-2" name="dance-slide-show" />
+                <input class="ss-radio" type="radio" id="dance-ss-3" name="dance-slide-show" />
+                <label for="dance-ss-1" class="ss-dot ss-dot-selected" id="dance-dot1"></label>
+                <label for="dance-ss-2" class="ss-dot" id="dance-dot2"></label>
+                <label for="dance-ss-3" class="ss-dot" id="dance-dot3"></label>
+              </div>
+              <p class="article-footer-website">www.ciemackenzybergile.com</p>
+            </div>
+            <div class="sound-content article-sound">
+              <svg xmlns="http://www.w3.org/2000/svg" class="sound-icon-wrapper" viewBox="0 0 50 50" width="128" height="128">
+                <g>
+                  <title>Sound Icon</title>
+                  <rect class="bar bar-dark" height="4" width="1" rx="0.5" transform="translate(10 0)"></rect>
+                  <rect class="bar bar-dark" height="20" width="1" rx="0.5" transform="translate(14 0)"></rect>
+                  <rect class="bar bar-dark" height="4" width="1" rx="0.5" transform="translate(18 0)"></rect>
+                  <rect class="bar bar-dark" height="10" width="1" rx="0.5" transform="translate(22 0)"></rect>
+                  <rect class="bar bar-dark" height="20" width="1" rx="0.5" transform="translate(26 0)"></rect>
+                  <rect class="bar bar-dark" height="20" width="1" rx="0.5" transform="translate(30 0)"></rect>
+                  <rect class="bar bar-dark" height="20" width="1" rx="0.5" transform="translate(34 0)"></rect>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+        </section>
+        <!-- END DANCE ARTICLE -->
+
+          <div id="dance-first-slide">
+            <script type="text/paperscript" canvas="dance-experience" src="js/dance-experience.js"></script>
+            <canvas id="dance-experience" resize="true"></canvas>
+            <img src='img/dancers_1.png' id='img-dancers' />
+            <img src='img/dancers_zoom.png' id='img-dancers-2' />
+            <img src='img/dancers_crayons.png' id='img-dancers-3' />
+            <div id="hover-dancers-crayons"></div>
+            <div class="animated fadeOut" id="mouse-animated-dance">
+              <div class="scroll-down">
+                <div class="mousey-black" id="mouse-down">
+                  <div class="scroller-black"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <!-- END DANCE -->
+
+      <!-- MUSIC WORKSHOP -->
+      <section
+              class="section"
+              id="music-section">
+
+          <audio id="vinyl-noise" src="sons/music_workshop/vinyl_noise.m4a" loop volume="2">
+              <p>Votre navigateur ne prend pas en charge le son. Veuillez changez de navigateur afin de profiter d'une expérience optimale.</p>
+          </audio>
+          <audio id="vinyl" src="sons/baloji/Peau de Chagrin Bleu de Nuit.mp3">
+          <p>Votre navigateur ne prend pas en charge le son. Veuillez changez de navigateur afin de profiter d'une expérience optimale.</p>
+          </audio>
+
+<!--        <div id="music-workshop-konva"></div>-->
+
+        <!-- MUSIC ARTICLE -->
+        <section class="article-container" id="article-container-music">
+
+          <img class="brush brush-show" id="article-music-blue2" src="img/brush/blue2.png" />
+          <img class="brush brush-show" id="article-music-orange4" src="img/brush/orange4.png" />
+
+          <img class="brush" id="article-music-blue5" src="img/brush/blue5.png" />
+          <img class="brush" id="article-music-yellow4" src="img/brush/yellow4.png" />
+
+          <img class="brush" id="article-music-yellow3" src="img/brush/yellow3.png" />
+          <img class="brush" id="article-music-orange3" src="img/brush/orange3.png" />
+
+          <img class="brush" id="article-music-yellow6" src="img/brush/yellow6.png" />
+          <img class="brush" id="article-music-blue6" src="img/brush/blue6.png" />
+
+<!--          <img class="brush" id="article-music-blue6" src="img/brush/orange6.png" />-->
+
+          <div class="article-wrapper">
+
+            <img class="article-dechirure" src="img/texture/dechirure1.png" />
+
+            <div class="article-title-wrapper" id="article-title-wrapper-music">
+              <p class="article-title">Révélation</p>
+              <p class="article-author">Baloji</p>
+            </div>
+
+            <div class="article-img-wrapper ">
+              <img class="article-img" id="article-img-music3" src="img/articles/music/article3.jpeg">
+              <img class="article-img" id="article-img-music2" src="img/articles/music/article2.jpeg">
+              <img class="article-img" id="article-img-music1" src="img/articles/music/article1.jpeg">
+              <img class="article-img article-img-crayon" id="article-img-crayon-music" src="img/articles/music/crayon.png">
+            </div>
+            <div class="article-text-wrapper" id="article-text-wrapper-music">
+              <p class="article-text">Ecoutez tout Baloji : tout est bien, tout est bon, chaque morceau est différent, à la fois électro, pop, afro, boum boum, disco, rap, funk, mélodique, incursions éthiopiennes, maliennes, congolaises, sans jamais avoir cette impression désagréable d’ethno-musique poussiéreuse. Et c’est ça qui est fort avec Baloji, c’est probablement le premier et le seul – peut être parce qu’il est belge – à avoir pris les influences africaines de façon moderne, glamour, sexy, rock et rejeté les clichés pour intégrer ces références dans sa mythologie. Aussi bien musicalement qu’esthétiquement. Il suffit de regarder le clip démentiel de Bleu de Nuit qu’il a réalisé, en s’inspirant du travail du formidable photographe Patrick Willocq, qui crée des œuvres super poétiques et ultra colorées entre Mondino, Martin Parr et Pierre et Gilles. Franchement un des trucs les plus beaux qu’on ait vu ces dernières années. Dans l’univers de Baloji tous les fondamentaux afros sont là, mais assemblés d’une manière à constituer une culture moderne et pop en soi, mais aussi empreinte des cultures rock et cinématographiques d'Occident, qui n’est pas sans rappeler les romans de Chimamanda Ngozi Adichie.</p>
+              <p class="article-text"><b>Isabelle Nivet</b> Avril 2018. <br><b>Sorties de secours</b></p>
+            </div>
+
+          </div>
+
+          <div class="article-footer">
+            <p><b>Kristin Lee Moolman</b> Photographe.</p>
+            <div class="article-footer-center">
+              <div class="ss-buttons-wrapper ss-buttons-wrapper-hidden" id="ss-buttons-wrapper-music">
+                <input class="ss-radio" type="radio" id="music-ss-1" name="music-slide-show" checked />
+                <input class="ss-radio" type="radio" id="music-ss-2" name="music-slide-show" />
+                <input class="ss-radio" type="radio" id="music-ss-3" name="music-slide-show" />
+                <label for="music-ss-1" class="ss-dot ss-dot-selected" id="music-dot1"></label>
+                <label for="music-ss-2" class="ss-dot" id="music-dot2"></label>
+                <label for="music-ss-3" class="ss-dot" id="music-dot3"></label>
+              </div>
+              <p class="article-footer-website">www.baloji.com</p>
+            </div>
+            <div class="sound-content article-sound">
+              <svg xmlns="http://www.w3.org/2000/svg" class="sound-icon-wrapper" viewBox="0 0 50 50" width="128" height="128">
+                <g>
+                  <title>Sound Icon</title>
+                  <rect class="bar bar-dark" height="4" width="1" rx="0.5" transform="translate(10 0)"></rect>
+                  <rect class="bar bar-dark" height="20" width="1" rx="0.5" transform="translate(14 0)"></rect>
+                  <rect class="bar bar-dark" height="4" width="1" rx="0.5" transform="translate(18 0)"></rect>
+                  <rect class="bar bar-dark" height="10" width="1" rx="0.5" transform="translate(22 0)"></rect>
+                  <rect class="bar bar-dark" height="20" width="1" rx="0.5" transform="translate(26 0)"></rect>
+                  <rect class="bar bar-dark" height="20" width="1" rx="0.5" transform="translate(30 0)"></rect>
+                  <rect class="bar bar-dark" height="20" width="1" rx="0.5" transform="translate(34 0)"></rect>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+        </section>
+        <!-- END MUSIC ARTICLE -->
+
+      </section>
+      <!-- END MUSIC WORKSHOP -->
+    </div>
+    <!-- END NON SCROLLABLE -->
+
+    <section class="section" id="figures-section">
+        <div class="textFigure">
+            <div id="modify">
+                <p id="le_figure">15</p>
+                <div id="contentFigure">
+                    <p id="light">Florian</p>
+                    <p id="bolder">Daniel</p>
+                </div>
+            </div>
+            <span>4</span>
+            <span>5</span>
+            <span>20</span>
+            <span>31</span>
+            <span>224</span>
+            <span>300</span>
+            <span>600</span>
+            <span>12 000</span>
+            <span>27 209</span>
+            <input type="range" id="range" min="0" max="540" value="0" step="1">
+        </div>
+    </section>
+
+  </div>
+  <!-- FIN CONTAINER -->
+
+
+</body>
+</html>

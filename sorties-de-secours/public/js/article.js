@@ -11,6 +11,19 @@
     let $articleExpoYellow5;
     let $articleExpoOrange6;
 
+    // music
+    let $articleMusicBlue2;
+    let $articleMusicOrange4;
+
+    let $articleMusicBlue5;
+    let $articleMusicYellow4;
+
+    let $articleMusicYellow3;
+    let $articleMusicOrange3;
+
+    let $articleMusicYellow6;
+    let $articleMusicBlue6;
+
 
 let currentSlide = 0;
 let scrollRecently = false;
@@ -35,12 +48,24 @@ function initArticle(sectionName) {
     $articleExpoYellow5 = $("#article-expo-yellow5");
     $articleExpoOrange6 = $("#article-expo-orange6");
 
+    // music brushes
+    $articleMusicBlue2 = $("#article-music-blue2");
+    $articleMusicOrange4 = $("#article-music-orange4");
+    $articleMusicBlue5 = $("#article-music-blue5");
+    $articleMusicYellow4 = $("#article-music-yellow4");
+    $articleMusicYellow3 = $("#article-music-yellow3");
+    $articleMusicOrange3 = $("#article-music-orange3");
+    $articleMusicYellow6 = $("#article-music-yellow6");
+    $articleMusicBlue6 = $("#article-music-blue6");
+
     // JQuery elements
     $articleContainer = $('#article-container-' + sectionName);
     $articleImgCrayon = $('#article-img-crayon-'+sectionName);
     $articleTextWrapper = $('#article-text-wrapper-'+sectionName);
     $articleTitleWrapper = $('#article-title-wrapper-'+sectionName);
     $ssButtonsWrapper = $('#ss-buttons-wrapper-'+sectionName);
+
+    $articleContainer.addClass("article-container-show");
 
     $('#' + sectionName + '-section').on('mousewheel', function(event, delta) {
 
@@ -165,6 +190,39 @@ function animateBrush(sectionName, id) {
             default:
                 break;
         }
+    } else if (sectionName === "music") {
+
+        $articleMusicBlue2.removeClass('brush-show');
+        $articleMusicOrange4.removeClass('brush-show');
+        $articleMusicBlue5.removeClass('brush-show');
+        $articleMusicYellow4.removeClass('brush-show');
+        $articleMusicYellow3.removeClass('brush-show');
+        $articleMusicOrange3.removeClass('brush-show');
+        $articleMusicYellow6.removeClass('brush-show');
+        $articleMusicBlue6.removeClass('brush-show');
+
+        switch (id) {
+            case 0:
+                $articleMusicBlue2.addClass('brush-show');
+                $articleMusicOrange4.addClass('brush-show');
+                break;
+            case 1:
+                $articleMusicBlue5.addClass('brush-show');
+                $articleMusicYellow4.addClass('brush-show');
+                break;
+            case 2:
+                $articleMusicYellow3.addClass('brush-show');
+                $articleMusicOrange3.addClass('brush-show');
+                break;
+            case 3:
+                $articleMusicYellow6.addClass('brush-show');
+                $articleMusicBlue6.addClass('brush-show');
+                break;
+            case 4:
+            default:
+                break;
+        }
+
     }
 
 }
@@ -196,5 +254,9 @@ function goBackToMenu(sectionName) {
         $("#hachure-dance").css("cursor", "auto");
         break;
     }
+
+    /* reset parameters*/
+    currentSlide = 0;
+    scrollRecently = false;
 
 }

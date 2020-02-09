@@ -19,8 +19,8 @@ $(document).ready(function() {
     };
 
     var music_workshop = {
-        top: $('#music-workshop-section').offset().top,
-        bottom: $('#music-workshop-section').offset().top + $('#music-workshop-section').height()
+        top: $('#music-section').offset().top,
+        bottom: $('#music-section').offset().top + $('#music-section').height()
     };
 
     $(window).scroll(function() {

@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac9d4dd8-92c6-4591-b43f-ebe54ec00b1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sorties-de-secours/public/css/article.css" beforeDir="false" afterPath="$PROJECT_DIR$/sorties-de-secours/public/css/article.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sorties-de-secours/public/css/dance.css" beforeDir="false" afterPath="$PROJECT_DIR$/sorties-de-secours/public/css/dance.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorties-de-secours/public/css/expo.css" beforeDir="false" afterPath="$PROJECT_DIR$/sorties-de-secours/public/css/expo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorties-de-secours/public/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/sorties-de-secours/public/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sorties-de-secours/public/css/music-workshop.css" beforeDir="false" afterPath="$PROJECT_DIR$/sorties-de-secours/public/css/music-workshop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sorties-de-secours/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sorties-de-secours/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sorties-de-secours/public/js/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/sorties-de-secours/public/js/article.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sorties-de-secours/public/js/dance.js" beforeDir="false" afterPath="$PROJECT_DIR$/sorties-de-secours/public/js/dance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorties-de-secours/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/sorties-de-secours/public/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sorties-de-secours/public/js/expo.js" beforeDir="false" afterPath="$PROJECT_DIR$/sorties-de-secours/public/js/expo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sorties-de-secours/public/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/sorties-de-secours/public/js/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sorties-de-secours/public/js/sound.js" beforeDir="false" afterPath="$PROJECT_DIR$/sorties-de-secours/public/js/sound.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,7 @@
       <workItem from="1580977751785" duration="19359000" />
       <workItem from="1581083576721" duration="11925000" />
       <workItem from="1581159197450" duration="16408000" />
-      <workItem from="1581242622692" duration="16312000" />
+      <workItem from="1581242622692" duration="29000000" />
     </task>
     <servers />
   </component>
@@ -95,9 +94,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1581256298856" />
-    <state x="685" y="151" width="704" height="807" key="find.popup" timestamp="1581257053408">
+    <state x="685" y="151" width="704" height="807" key="find.popup" timestamp="1581274559176">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="685" y="151" width="704" height="807" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1581257053408" />
+    <state x="685" y="151" width="704" height="807" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1581274559176" />
   </component>
 </project>

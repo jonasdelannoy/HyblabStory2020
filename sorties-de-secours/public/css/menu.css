@@ -219,15 +219,7 @@
   transition-delay: 0.5s;
 }
 
-#mouse-animated-menuExpo {
-  position: absolute;
-  bottom: 20%;
-}
-#mouse-animated-menuMusic {
-  position: absolute;
-  bottom: 20%;
-}
-#mouse-animated-menuDance {
+#mouse-animated-menuExpo, #mouse-animated-menuMusic, #mouse-animated-menuDance {
   position: absolute;
   bottom: 20%;
 }
