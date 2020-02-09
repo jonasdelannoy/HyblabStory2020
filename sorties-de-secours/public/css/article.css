@@ -1,0 +1,269 @@
+.article-container {
+    position: relative;
+    /*width: 100%;*/
+    height: calc(100% - 300px);
+    padding: 150px;
+    background-color: #F6F5F5;
+
+    transition: height 0.5s, padding 0.5s;
+}
+
+.article-wrapper {
+    /*position: relative;*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+}
+
+/* TITLE*/
+.article-title-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    transform: translate(-50%, -50%);
+
+    z-index: 6;
+
+    font-family: "Nimbus Sans L";
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-style: normal;
+
+    transition: all 1s;
+}
+.article-author {
+    font-weight: bold;
+}
+.article-title {
+    font-weight: normal;
+}
+
+/* IMAGE */
+.article-img-wrapper {
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+.article-img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* TEXTES */
+.article-text-wrapper {
+    flex-grow: 1;
+    align-self: flex-end;
+
+    z-index: 6;
+
+    width: 100%;
+    max-height: 75%;
+    padding-left: 50px;
+
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: "Nimbus Sans L";
+
+    transition: width 1s, padding 1s;
+}
+
+.article-text {
+    padding-top: 25px;
+}
+
+/* FOOTER */
+.article-footer {
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 6;
+
+    height: 75px;
+    padding: 25px 0 50px 0;
+
+    font-family: "Nimbus Sans L";
+}
+
+.article-footer > p, .article-footer > div {
+    flex-grow: 1;
+    z-index: 6;
+}
+
+.article-footer-center {
+    text-align: center;
+}
+.article-footer-website {
+    align-self: flex-end;
+}
+
+/* sound-logo */
+.article-sound > .sound-icon-wrapper{
+    float: right;
+}
+.bar-dark {
+    fill: black;
+    border-radius: 5px;
+}
+
+
+/* BRUSH */
+.brush {
+    /*visibility: hidden;*/
+    z-index: 5;
+    position: absolute;
+    transform: translateX(-50%);
+    opacity: 0;
+
+    transition: opacity 0.75s;
+}
+
+.brush-show {
+    /*visibility: visible;*/
+    opacity: 1;
+}
+
+#article-expo-yellow1 {
+    width: 1175px;
+    height: 1211px;
+    top: -523px;
+    left: 55%;
+}
+
+#article-expo-orange5 {
+    left: 15%;
+    top: -253px;
+    width: 719px;
+    height: 741px;
+}
+
+#article-expo-blue5 {
+    right: -50px;
+    top: 317px;
+    width: 543px;
+    height: 559px;
+    transform: rotate(80deg);
+}
+
+#article-expo-orange1 {
+    left: 70%;
+    top: -31px;
+    width: 325px;
+    height: 335px;
+}
+
+#article-expo-blue3 {
+    left: 113px;
+    bottom: -100px;
+    width: 532.51px;
+    height: 549.38px;
+    transform: matrix(-0.45, 0.89, 0.89, 0.45, 0, 0);
+}
+
+#article-expo-yellow5 {
+    width: 624px;
+    height: 643px;
+    left: 30%;
+    bottom: -250px;
+    transform: rotate(128deg);
+}
+#article-expo-orange6 {
+    width: 639px;
+    height: 659px;
+    right: -200px;
+    top: -214px;
+    transform: rotate(17deg);
+}
+
+/* SLIDESHOW */
+.ss-buttons-wrapper {
+
+}
+.ss-radio { display: none; }
+
+.ss-buttons-wrapper .ss-dot {
+    position: relative;
+    display: inline-block;
+
+    /*top: -5px;*/
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+    transition: .4s;
+
+    border-radius: 100%;
+    border: 1px solid #1E1E1E;
+    box-sizing: border-box;
+}
+
+.ss-dot.ss-dot-selected {
+    background-color: #1E1E1E;
+}
+
+.ss-buttons-wrapper {
+    opacity: 1;
+    visibility: visible;
+
+    transition: opacity 0.5s;
+}
+.ss-buttons-wrapper.ss-buttons-wrapper-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Full screen slide show */
+.article-title-wrapper-fullscreen {
+    top: 71px;
+    left: 150px;
+
+    font-size: 30px;
+    line-height: 35px;
+
+    transform: translate(0, 0);
+}
+.article-text-wrapper-hidden {
+    width: 0;
+    visibility: hidden;
+    padding: 0;
+}
+
+.article-img-hidden {
+    transform: translate(-200%, -50%);
+    transition: transform 1s;
+}
+
+/* previous slide */
+.article-img-show {
+    transform: translate(-50%, -50%);
+    transition: transform 1s;
+}
+
+.article-img-fullscreen {
+    width: 100vw;
+}
+.article-img-wrapper-fullscreen {
+
+}
+.article-container-fullscreen {
+    padding: 0;
+    height: 100vh;
+}
+.article-img-crayon {
+    opacity: 0;
+}
+.article-img-crayon-show {
+    opacity: 1;
+    transition: opacity 0.5s;
+    transition-delay: 0.5s;
+}

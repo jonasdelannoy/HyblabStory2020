@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #home-section {
 	position: relative;
 	background-color: #1E1E1E;
@@ -25,3 +26,54 @@
 #arrow-down:hover {
 	opacity: 0.5;
 }
+=======
+#home-section {
+	position: relative;
+	background-color: #1E1E1E;
+}
+
+#home-wrapper {
+	position: relative;
+	top: 20%;
+	text-align: center;
+}
+
+#logo-wrapper {
+	position: relative;
+}
+
+#start-experience {
+	position: relative;
+	margin-top: 200px;
+}
+
+#button-start {
+	position: absolute;
+	left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+	border-style: solid;
+	border-color: white;
+	margin: auto;
+	text-transform: uppercase;
+	width: 250px;
+	color: white;
+	font-family: "NimbusSanL";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+#img-start {
+	z-index: 1;
+	opacity: 0;
+	transition-property: opacity;
+  transition-duration: 1s;
+}
+
+#button-start-text {
+	margin: 1vw;
+}
+>>>>>>> origin/sorties-de-secours

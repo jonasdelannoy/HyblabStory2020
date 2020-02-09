@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #expo-section {
 	position: relative;
 }
@@ -20,3 +21,27 @@
   /*clip-path: circle(0 at 0 0);*/
    clip-path: url(#expo-clip);
 }
+=======
+#expo-section {
+	position: relative;
+    overflow-y: hidden;
+}
+
+.expo-wrapper {
+}
+
+.expo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    z-index: 1000;
+}
+.expo-img.discover{
+  z-index: 1001;
+  /*clip-path: circle(0 at 0 0);*/
+   clip-path: url(#expo-clip);
+}
+>>>>>>> origin/sorties-de-secours

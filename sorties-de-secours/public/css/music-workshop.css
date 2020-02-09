@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 #music-workshop-section {
   position: relative;
 	background-color: #1E1E1E;
 }
+=======
+#music-workshop-section {
+  position: relative;
+	background-color: #1E1E1E;
+}
+
+section#music-workshop-article {
+    background-color: #FF7945;
+    text-align: center;
+}
+>>>>>>> origin/sorties-de-secours

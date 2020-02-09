@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #loading-section {
   position: relative;
   text-align: center;
@@ -99,3 +100,176 @@
 .barDance:nth-child(8) {
     animation: child-7 0.85s linear alternate infinite;
 }
+=======
+#loading-section {
+  position: relative;
+  text-align: center;
+  background-color: #1E1E1E;
+}
+
+.sound-content {
+  position: relative;
+  top: 30%;
+
+  animation-delay: 0.5s;
+}
+
+#sound-icon-wrapper {
+  margin: auto;
+  height: auto;
+  width: 100px;
+}
+
+.bar-white {
+    fill: white;
+    border-radius: 5px;
+}
+
+
+/* Keyframes */
+@keyframes child-1 {
+    from { height: 4px; transform: translate(10px, 8px); }
+    to   { height: 10px; transform: translate(10px, 5px); }
+}
+@keyframes child-2 {
+    from { height: 20px; transform: translate(14px, 0px); }
+    to   { height: 10px; transform: translate(14px, 5px); }
+}
+@keyframes child-3 {
+    from { height: 4px; transform: translate(18px, 8px); }
+    to   { height: 16px; transform: translate(18px, 2px); }
+}
+@keyframes child-4 {
+    from { height: 2px; transform: translate(22px, 9px); }
+    to   { height: 14px; transform: translate(22px, 3px); }
+}
+@keyframes child-5 {
+    from { height: 16px; transform: translate(26px, 2px); }
+    to   { height: 6px; transform: translate(26px, 7px); }
+}
+@keyframes child-6 {
+    from { height: 4px; transform: translate(30px, 8px); }
+    to   { height: 12px; transform: translate(30px, 3px); }
+}
+@keyframes child-7 {
+    from { height: 2px; transform: translate(34px, 9px); }
+    to   { height: 12px; transform: translate(34px, 3px); }
+}
+
+.bar:nth-child(2) {
+    animation: child-1 0.8s linear alternate infinite;
+}
+.bar:nth-child(3) {
+    animation: child-2 0.6s linear alternate infinite;
+}
+.bar:nth-child(4) {
+    animation: child-3 0.9s linear alternate infinite;
+}
+.bar:nth-child(5) {
+    animation: child-4 0.65s linear alternate infinite;
+}
+.bar:nth-child(6) {
+    animation: child-5 0.75s linear alternate infinite;
+}
+.bar:nth-child(7) {
+    animation: child-6 0.5s linear alternate infinite;
+}
+.bar:nth-child(8) {
+    animation: child-7 0.85s linear alternate infinite;
+}
+
+.barDance {
+    fill: white;
+    border-radius: 5px;
+}
+
+.barDance:nth-child(2) {
+    animation: child-1 0.8s linear alternate infinite;
+}
+.barDance:nth-child(3) {
+    animation: child-2 0.6s linear alternate infinite;
+}
+.barDance:nth-child(4) {
+    animation: child-3 0.9s linear alternate infinite;
+}
+.barDance:nth-child(5) {
+    animation: child-4 0.65s linear alternate infinite;
+}
+.barDance:nth-child(6) {
+    animation: child-5 0.75s linear alternate infinite;
+}
+.barDance:nth-child(7) {
+    animation: child-6 0.5s linear alternate infinite;
+}
+.barDance:nth-child(8) {
+    animation: child-7 0.85s linear alternate infinite;
+}
+
+#mouse-animated {
+	position: relative;
+	top: 50%;
+	margin-top: 3%;
+	width: 100vw;
+}
+
+#mouse-down {
+    position: absolute;
+    transform: translate(-50%, -50%);
+	left: 50%;
+}
+
+.scroll-down {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  width :34px;
+  height: 55px;
+}
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.85;
+    box-sizing: content-box;
+}
+.mousey-black {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 3px solid #000;
+  border-radius: 25px;
+  opacity: 0.85;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+.scroller-black {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #000;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+>>>>>>> origin/sorties-de-secours

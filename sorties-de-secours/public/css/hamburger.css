@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #hamburger {
   display: block;
   position: absolute;
@@ -116,3 +117,124 @@
 #hamburger input:checked ~ ul {
   transform: none;
 }
+=======
+#hamburger {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 100%;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "NimbusSanL";
+
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.menuLink:hover {
+  color: #FFCB13;
+}
+
+
+#hamburger input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  right: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+#hamburger span {
+  display: block;
+  width: 33px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: white;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#hamburger span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#hamburger span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#hamburger input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+#hamburger input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#hamburger input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0px, 2px);
+  background: white;
+}
+
+#categories {
+  position: absolute;
+  width: 400px;
+  top: -50px;
+  right: -50px;
+  border: 0;
+  height: 100%;
+
+  background: #232323;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#categories li:first-child {
+  padding-top: 120px;
+}
+
+#categories li {
+  padding: 20px;
+  padding-left: 60px;
+}
+
+#hamburger input:checked ~ ul {
+  transform: none;
+}
+>>>>>>> origin/sorties-de-secours
